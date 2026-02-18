@@ -98,7 +98,20 @@
                 <a href="https://www.instagram.com/erke.detsad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="ig"><i class="fa fa-instagram"></i></a>
                  <a href="https://wa.me/77754234469" class="tw"><i class="fa fa-whatsapp"></i></a>
               </div>
+			    <div class="lang-buttons mobile-lang">
+          <button onclick="changeLanguage('KZ')">KZ</button>
+          <button onclick="changeLanguage('RU')">RU</button>
+        </div>
+
+
+      <!-- Тек десктопта көрсетіледі -->
+      <div class="lang-buttons desktop-lang">
+        <button onclick="changeLanguage('KZ')">KZ</button>
+        <button onclick="changeLanguage('RU')">RU</button>
+      </div>
+
             </div>
+			
           </div>
         </div>
       </div>
@@ -124,29 +137,30 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Басты бет</a>
+                  <a class="nav-link" href="index.html" data-lang="home">Басты бет</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">Біз туралы</a>
+                  <a class="nav-link" href="about.html" data-lang="about">Біз туралы</a>
                 </li>
                 <!-- <li class="nav-item">
 			                    <a class="nav-link" href="classes.html">CLASSES</a>
 			                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="teachers.html">Ұжым</a>
+                  <a class="nav-link" href="teachers.html" data-lang="col">Ұжым</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="page-gallery.html">Галерея</a>
+                  <a class="nav-link" href="page-gallery.html" data-lang="gal">Галерея</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Байланыс</a>
+                  <a class="nav-link" href="contact.html" data-lang="con">Байланыс</a>
                 </li>
               </ul>
             </div>
           </nav>
           <!-- -->
         </div>
+		 
       </div>
     </div>
 
@@ -158,10 +172,10 @@
           <div class="overlay-bg"></div>
           <div class="container d-flex align-items-center">
             <div class="wrap-caption">
-              <h3 class="caption-supheading">
+              <h3 class="caption-supheading" data-lang="wel">
                 Ерке балабақшасына қош келдіңіз!
               </h3>
-              <h1 class="caption-heading">
+              <h1 class="caption-heading" data-lang="bal">
                 Балалардың бақытты болашағы осы жерден басталады
               </h1>
          
@@ -173,10 +187,10 @@
           <div class="overlay-bg"></div>
           <div class="container d-flex align-items-center">
            <div class="wrap-caption">
-   <h3 class="caption-supheading">
+   <h3 class="caption-supheading" data-lang="wel">
                 Ерке балабақшасына қош келдіңіз!
               </h3>
-    <h1 class="caption-heading">Балалардың қауіпсіз дамуы мен сапалы тәрбиесі</h1>
+    <h1 class="caption-heading" data-lang="ball" >Балалардың қауіпсіз дамуы мен сапалы тәрбиесі</h1>
   
 </div>
 
@@ -187,10 +201,10 @@
           <div class="overlay-bg"></div>
           <div class="container d-flex align-items-center">
             <div class="wrap-caption">
-              <h3 class="caption-supheading">
+              <h3 class="caption-supheading" data-lang="wel">
                 Ерке балабақшасына қош келдіңіз!
               </h3>
-              <h1 class="caption-heading">Ойын, білім және бақытты балалық шақ</h1>
+              <h1 class="caption-heading" data-lang="balll">Ойын, білім және бақытты балалық шақ</h1>
 
             </div>
           </div>
@@ -212,12 +226,12 @@
               <div class="rs-feature-box-1 bg-primary">
                 <i class="fa fa-clock-o"></i>
                 <div class="body">
-                  <h4>Толық күндік бағдарлама</h4>
-                  <p>
+                  <h4 data-lang="tol">Толық күндік бағдарлама</h4>
+                  <p data-lang="toll">
                     Балалардың жан-жақты дамуына арналған толық күндік оқу және ойын бағдарламалары ұйымдастырылады.
                   </p>
                   <div class="spacer-10"></div>
-                  <a href="#" class="btn">ТОЛЫҒЫРАҚ</a>
+                 
                 </div>
               </div>
             </div>
@@ -227,12 +241,12 @@
               <div class="rs-feature-box-1 bg-secondary">
                 <i class="fa fa-home"></i>
                 <div class="body">
-                  <h4>Қауіпсіз әрі жайлы орта</h4>
-                  <p>
+                  <h4 data-lang="q">Қауіпсіз әрі жайлы орта</h4>
+                  <p data-lang="w">
                     Балалар үшін қауіпсіз, жылы және үйдегідей жайлы атмосфера қалыптастырылған.
                   </p>
                   <div class="spacer-10"></div>
-                  <a href="#" class="btn">ТОЛЫҒЫРАҚ</a>
+                
                 </div>
               </div>
             </div>
@@ -242,12 +256,12 @@
               <div class="rs-feature-box-1 bg-tertiary">
                 <i class="fa fa-trophy"></i>
                 <div class="body">
-                  <h4>Дамыту және жетістік</h4>
-                  <p>
+                  <h4 data-lang="e">Дамыту және жетістік</h4>
+                  <p data-lang="r">
                     Шығармашылық, логикалық ойлау және әлеуметтік дағдыларды дамытуға бағытталған арнайы сабақтар өткізіледі.
                   </p>
                   <div class="spacer-10"></div>
-                  <a href="#" class="btn">ТОЛЫҒЫРАҚ</a>
+                 
                 </div>
               </div>
             </div>
@@ -272,16 +286,16 @@
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-6">
-          <h2 class="section-heading">Ерке балабақшасына қош келдіңіз</h2>
+          <h2 class="section-heading" data-lang="wel">Ерке балабақшасына қош келдіңіз</h2>
 
-          <p>
+          <p data-lang="t">
             «Ерке» балабақшасы — балалардың бақытты балалық шағын қалыптастырып,
             олардың жан-жақты дамуына жағдай жасайтын заманауи білім беру орталығы.
             Біз әр баланың жеке қабілетін ескеріп, ойын арқылы оқыту әдістерін
             қолдана отырып, білімге деген қызығушылығын арттырамыз.
           </p>
 
-          <p>
+          <p data-lang="y">
             Тәжірибелі тәрбиешілеріміз балалардың шығармашылық, танымдық және
             әлеуметтік дағдыларын дамытуға ерекше көңіл бөледі. Қауіпсіз әрі
             жайлы ортада бала өзін еркін сезініп, жаңа достар тауып,
@@ -309,10 +323,10 @@
       <div class="row align-items-end">
         
         <div class="col-sm-12 col-md-12 col-lg-7">
-          <p class="supheading">Неліктен ата-аналар бізді таңдайды?</p>
-          <h2 class="section-heading">Ерке – балаңыздың жарқын болашағы</h2>
+          <p class="supheading" data-lang="u">Неліктен ата-аналар бізді таңдайды?</p>
+          <h2 class="section-heading" data-lang="i">Ерке – балаңыздың жарқын болашағы</h2>
 
-          <p class="text-white">
+          <p class="text-white" data-lang="o">
             Әрбір ата-ана өз баласының қауіпсіз ортада тәрбиеленіп, сапалы білім
             алғанын қалайды. «Ерке» балабақшасында біз тек білім беріп қана
             қоймай, баланың тұлға ретінде қалыптасуына ерекше көңіл бөлеміз.
@@ -320,19 +334,19 @@
             арқылы балалар күн сайын жаңа білім мен жақсы көңіл-күй алады.
           </p>
 
-          <p class="p-check text-white">
+          <p class="p-check text-white" data-lang="p">
              Баланың ойлау, сөйлеу және шығармашылық қабілетін дамыту
           </p>
 
-          <p class="p-check text-white">
+          <p class="p-check text-white" data-lang="a">
             Қауіпсіз, таза және жайлы орта
           </p>
 
-          <p class="p-check text-white">
+          <p class="p-check text-white" data-lang="s">
              Ойын арқылы тиімді оқыту бағдарламасы
           </p>
 
-          <p class="p-check text-white">
+          <p class="p-check text-white" data-lang="d">
             Тәжірибелі әрі қамқор педагогтар ұжымы
           </p>
 
@@ -357,8 +371,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12">
-          <p class="supheading text-center">Біздің галерея</p>
-          <h2 class="section-heading text-center mb-5">
+          <p class="supheading text-center" data-lang="f">Біздің галерея</p>
+          <h2 class="section-heading text-center mb-5" data-lang="g">
             Балалардың бақытты сәттері
           </h2>
         </div>
@@ -463,8 +477,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12">
-          <p class="supheading text-center">Біздің іс-шаралар</p>
-          <h2 class="section-heading text-center mb-5">
+          <p class="supheading text-center" data-lang="events_sup">Біздің іс-шаралар</p>
+          <h2 class="section-heading text-center mb-5" data-lang="events_title">
             Қызықты шараларды жіберіп алмаңыз
           </h2>
         </div>
@@ -479,9 +493,9 @@
               <img src="images/Screenshot 2026-02-17 at 13.39.50.png"  alt="Ағылшын тілі күні" class="img-fluid"/>
             </div>
             <div class="body-box">
-              <div class="title">English Day — Ағылшын тілі күні</div>
+              <div class="title" data-lang="event1_title">English Day — Ағылшын тілі күні</div>
            
-              <p>
+              <p data-lang="event1_text"> 
                 Балалар ойын және қызықты тапсырмалар арқылы ағылшын тілін үйреніп,
                 жаңа сөздермен танысады.
               </p>
@@ -497,9 +511,9 @@
               <img src="images/IMG_5370.jpg" alt="Ойын арқылы оқу" class="img-fluid"/>
             </div>
             <div class="body-box">
-              <div class="title">Ойын арқылы оқу сабағы</div>
+              <div class="title" data-lang="event2_title">Ойын арқылы оқу сабағы</div>
            
-              <p>
+              <p data-lang="event2_text">
                 Балалардың логикалық ойлау қабілетін дамытуға арналған қызықты
                 ойындар мен танымдық тапсырмалар өткізіледі.
               </p>
@@ -517,9 +531,9 @@
               <img src="images/IMG_5369.jpg" alt="Сурет салу күні" class="img-fluid"/>
             </div>
             <div class="body-box">
-              <div class="title">Сурет салу</div>
+              <div class="title" data-lang="event3_title">Сурет салу</div>
              
-              <p>
+              <p data-lang="event3_text">
                 Балалар шығармашылықпен айналысып, қиялын дамытуға
                 арналған сурет салу сабағына қатысады.
               </p>
@@ -540,8 +554,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12">
-          <p class="supheading text-center">Ата-аналардың пікірі</p>
-          <h2 class="section-heading text-center mb-5">
+          <p class="supheading text-center" data-lang="test_sup">Ата-аналардың пікірі</p>
+          <h2 class="section-heading text-center mb-5" data-lang="test_title">
             Біз туралы ата-аналар не дейді
           </h2>
         </div>
@@ -559,7 +573,7 @@
             <div class="item">
               <div class="rs-box-testimony">
                 <div class="quote-box">
-                  <blockquote>
+                  <blockquote data-lang="test1_text">
                     Балам «Ерке» балабақшасына үлкен қуанышпен барады.
                     Тәрбиешілер өте мейірімді, балаларға ерекше көңіл бөледі.
                     Қысқа уақыт ішінде баламның сөйлеуі мен қызығушылығы
@@ -575,7 +589,7 @@
                   </div>
 
                   <p class="quote-name">
-                 Шарапова Комиля Нодировна <span>Ата-ана</span>
+                 Шарапова Комиля Нодировна <span data-lang="test1_role">Ата-ана</span>
                   </p>
                 </div>
               </div>
@@ -585,7 +599,7 @@
             <div class="item">
               <div class="rs-box-testimony">
                 <div class="quote-box">
-                  <blockquote>
+                  <blockquote data-lang="test2_text">
                     Балабақшаның атмосферасы өте жылы әрі қауіпсіз.
                     Балаларға арналған сабақтар қызықты ұйымдастырылады.
                     Ұжымның кәсібилігі мен қамқорлығына ризамыз.
@@ -599,8 +613,8 @@
                     />
                   </div>
 
-                  <p class="quote-name">
-                    Мурсаитов Нимат Бохадырович <span>Ата-ана</span>
+                  <p class="quote-name" class="quote-name">
+                    Мурсаитов Нимат Бохадырович <span data-lang="test2_role">Ата-ана</span>
                   </p>
                 </div>
               </div>
@@ -621,17 +635,17 @@
           <div class="cta-1">
 
             <div class="body-text mb-3">
-              <h3 class="my-1 text-secondary">
+              <h3 class="my-1 text-secondary" data-lang="cta_title">
                 Балаңыздың жарқын болашағын бүгіннен бастаңыз!
               </h3>
-              <p class="uk18 mb-0 text-white">
+              <p class="uk18 mb-0 text-white" data-lang="cta_text">
                 «Ерке» балабақшасына жазылып, балаңызға қауіпсіз орта,
                 сапалы білім және бақытты балалық шақ сыйлаңыз.
               </p>
             </div>
 
             <div class="body-action">
-              <a href="contact.html" class="btn btn-primary mt-3">
+              <a href="contact.html" class="btn btn-primary mt-3" data-lang="cta_btn">
                 БІЗБЕН БАЙЛАНЫСУ
               </a>
             </div>
@@ -653,7 +667,7 @@
           <div class="footer-item">
             <img src="images/b91586ec8a6b40c1af3f265a8d53c9c2.png" width="200" alt="Ерке балабақшасы" class="logo-bottom"/>
             <div class="spacer-5"></div>
-            <p>
+            <p data-lang="footer_about">
               «Ерке» балабақшасы — балаларға қауіпсіз, жайлы орта ұсынып,
               олардың шығармашылық және танымдық қабілеттерін дамытуға
               арналған заманауи білім беру орталығы.
@@ -665,13 +679,13 @@
         <!-- Байланыс ақпараты -->
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-item">
-            <div class="footer-title">Байланыс ақпараты</div>
+            <div class="footer-title" data-lang="footer_contact">Байланыс ақпараты</div>
             <ul class="list-info">
               <li>
                 <div class="info-icon">
                   <span class="fa fa-map-marker"></span>
                 </div>
-                <div class="info-text">
+                <div class="info-text" data-lang="footer_address">
                  Тараз қаласы, Сухамбаева 78
                 </div>
               </li>
@@ -686,7 +700,7 @@
                 <div class="info-icon">
                   <span class="fa fa-clock-o"></span>
                 </div>
-                <div class="info-text">Дс – Жм 08:00 – 18:00</div>
+                <div class="info-text" data-lang="footer_time">Дс – Жм 08:00 – 18:00</div>
               </li>
             </ul>
           </div>
@@ -695,13 +709,13 @@
         <!-- Пайдалы сілтемелер -->
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-item">
-            <div class="footer-title">Пайдалы сілтемелер</div>
+            <div class="footer-title" data-lang="footer_links">Пайдалы сілтемелер</div>
             <ul class="list">
      
-              <li><a href="index.html" title="Басты бет">Басты бет</a></li>
-                      <li><a href="about.html" title="Біз туралы">Біз туралы</a></li>
-              <li><a href="teachers.html" title="Тәрбиешілер">Ұжым</a></li>
-              <li><a href="page-gallery.html" title="Сабақтар">Галерея</a></li>
+              <li><a href="index.html" title="Басты бет" data-lang="home">Басты бет</a></li>
+                      <li><a href="about.html" title="Біз туралы" data-lang="about">Біз туралы</a></li>
+              <li><a href="teachers.html" title="Тәрбиешілер" data-lang="col">Ұжым</a></li>
+              <li><a href="page-gallery.html" title="Сабақтар" data-lang="gal">Галерея</a></li>
             </ul>
           </div>
         </div>
@@ -709,8 +723,8 @@
         <!-- Әлеуметтік желілер -->
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-item">
-            <div class="footer-title">Бізбен байланыста болыңыз</div>
-            <p>
+            <div class="footer-title"  data-lang="footer_social">Бізбен байланыста болыңыз</div>
+            <p data-lang="footer_social_text">
               Бізді әлеуметтік желілерде бақылаңыз және жаңалықтардан хабардар болыңыз.
             </p>
             <div class="sosmed-icon d-inline-flex">
@@ -738,7 +752,7 @@
     <!-- SENDMAIL -->
     <script src="js/vendor/validator.min.js"></script>
     <script src="js/vendor/form-scripts.js"></script>
-
+<script src="js/lang.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

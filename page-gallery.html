@@ -52,64 +52,85 @@
     <div class="header header-1">
 
     	<!-- TOPBAR -->
-    	<div class="topbar">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-sm-8 col-md-6">
-						<div class="info">
-							<div class="info-item">
-								<i class="fa fa-phone"></i> +7 707 273 58 93
-							</div>
-						
-						</div>
-					</div>
-					<div class="col-sm-4 col-md-6">
-						<div class="sosmed-icon pull-right d-inline-flex">
-							<a href="#" class="ig"><i class="fa fa-instagram"></i></a> 
-							<a href="#" class="in"><i class="fa fa-whatsapp"></i></a> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    	 <div class="topbar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8 col-md-6">
+              <div class="info">
+                <div class="info-item">
+                  <i class="fa fa-phone"></i> +7 707 273 58 93
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-6">
+              <div class="sosmed-icon pull-right d-inline-flex">
+                <a href="https://www.instagram.com/erke.detsad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="ig"><i class="fa fa-instagram"></i></a>
+                 <a href="https://wa.me/77754234469" class="tw"><i class="fa fa-whatsapp"></i></a>
+              </div>
+			    <div class="lang-buttons mobile-lang">
+          <button onclick="changeLanguage('KZ')">KZ</button>
+          <button onclick="changeLanguage('RU')">RU</button>
+        </div>
+
+
+      <!-- Тек десктопта көрсетіледі -->
+      <div class="lang-buttons desktop-lang">
+        <button onclick="changeLanguage('KZ')">KZ</button>
+        <button onclick="changeLanguage('RU')">RU</button>
+      </div>
+
+            </div>
+			
+          </div>
+        </div>
+      </div>
+
 		<!-- NAVBAR SECTION -->
-	<div class="navbar-main">
-			<div class="container">
-			    <nav id="navbar-example" class="navbar navbar-expand-lg">
-			        <a class="navbar-brand" href="index.html">
-						  <img src="images/b91586ec8a6b40c1af3f265a8d53c9c2.png" width="200" alt="" />
-					</a>
-			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			            <span class="navbar-toggler-icon"></span>
-			        </button>
-			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-			            <ul class="navbar-nav ml-auto">
-			            	<li class="nav-item">
-			                    <a class="nav-link" href="index.html">Басты бет</a>
-			                </li>
-			            	<li class="nav-item">
-			                    <a class="nav-link" href="about.html">Біз туралы</a>
-			                </li>
-			            	<!-- <li class="nav-item">
+	 <div class="navbar-main">
+        <div class="container">
+          <nav id="navbar-example" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/b91586ec8a6b40c1af3f265a8d53c9c2.png" width="200" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" data-lang="home">Басты бет</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" data-lang="about">Біз туралы</a>
+                </li>
+                <!-- <li class="nav-item">
 			                    <a class="nav-link" href="classes.html">CLASSES</a>
 			                </li> -->
-			            	<li class="nav-item">
-			                    <a class="nav-link" href="teachers.html">Ұжым</a>
-			                </li>
-							<li class="nav-item active">
-			                  <a class="nav-link" href="page-gallery.html">Галерея</a>
-			                </li>
-			            
-			            	<li class="nav-item">
-			                    <a class="nav-link" href="contact.html">Байланыс</a>
-			                </li>
-			            </ul>
-			        </div>
-			    </nav> <!-- -->
+                <li class="nav-item">
+                  <a class="nav-link" href="teachers.html" data-lang="col">Ұжым</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="page-gallery.html" data-lang="gal">Галерея</a>
+                </li>
 
-			</div>
-		</div>
-
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" data-lang="con">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- -->
+        </div>
+		 
+      </div>
     </div>
 
 	<!-- BANNER -->
@@ -121,7 +142,7 @@
 			<div class="d-flex justify-content-center bd-highlight mb-3">
 			    <nav aria-label="breadcrumb">
 				  <ol class="breadcrumb ">
-				    <li class="breadcrumb-item"><a href="index.html">Басты бет</a></li>
+				    <li class="breadcrumb-item"><a href="index.html" data-lang="home" >Басты бет</a></li>
 				  </ol>
 				</nav>
 		  	</div>
@@ -767,8 +788,7 @@
 	</div>
 
 	<!-- CTA -->
-	
-<div class="section bg-tertiary">
+	<div class="section bg-tertiary">
   <div class="content-wrap py-5">
     <div class="container">
       <div class="row align-items-center">
@@ -776,17 +796,17 @@
           <div class="cta-1">
 
             <div class="body-text mb-3">
-              <h3 class="my-1 text-secondary">
+              <h3 class="my-1 text-secondary" data-lang="cta_title">
                 Балаңыздың жарқын болашағын бүгіннен бастаңыз!
               </h3>
-              <p class="uk18 mb-0 text-white">
+              <p class="uk18 mb-0 text-white" data-lang="cta_text">
                 «Ерке» балабақшасына жазылып, балаңызға қауіпсіз орта,
                 сапалы білім және бақытты балалық шақ сыйлаңыз.
               </p>
             </div>
 
             <div class="body-action">
-              <a href="contact.html" class="btn btn-primary mt-3">
+              <a href="contact.html" class="btn btn-primary mt-3" data-lang="cta_btn">
                 БІЗБЕН БАЙЛАНЫСУ
               </a>
             </div>
@@ -796,6 +816,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <div class="footer">
   <div class="content-wrap">
@@ -807,7 +828,7 @@
           <div class="footer-item">
             <img src="images/b91586ec8a6b40c1af3f265a8d53c9c2.png" width="200" alt="Ерке балабақшасы" class="logo-bottom"/>
             <div class="spacer-5"></div>
-            <p>
+            <p data-lang="footer_about">
               «Ерке» балабақшасы — балаларға қауіпсіз, жайлы орта ұсынып,
               олардың шығармашылық және танымдық қабілеттерін дамытуға
               арналған заманауи білім беру орталығы.
@@ -819,13 +840,13 @@
         <!-- Байланыс ақпараты -->
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-item">
-            <div class="footer-title">Байланыс ақпараты</div>
+            <div class="footer-title" data-lang="footer_contact">Байланыс ақпараты</div>
             <ul class="list-info">
               <li>
                 <div class="info-icon">
                   <span class="fa fa-map-marker"></span>
                 </div>
-                <div class="info-text">
+                <div class="info-text" data-lang="footer_address">
                  Тараз қаласы, Сухамбаева 78
                 </div>
               </li>
@@ -840,7 +861,7 @@
                 <div class="info-icon">
                   <span class="fa fa-clock-o"></span>
                 </div>
-                <div class="info-text">Дс – Жм 08:00 – 18:00</div>
+                <div class="info-text" data-lang="footer_time">Дс – Жм 08:00 – 18:00</div>
               </li>
             </ul>
           </div>
@@ -849,13 +870,13 @@
         <!-- Пайдалы сілтемелер -->
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-item">
-            <div class="footer-title">Пайдалы сілтемелер</div>
+            <div class="footer-title" data-lang="footer_links">Пайдалы сілтемелер</div>
             <ul class="list">
      
-              <li><a href="index.html" title="Басты бет">Басты бет</a></li>
-                      <li><a href="about.html" title="Біз туралы">Біз туралы</a></li>
-              <li><a href="teachers.html" title="Тәрбиешілер">Ұжым</a></li>
-              <li><a href="page-gallery.html" title="Сабақтар">Галерея</a></li>
+              <li><a href="index.html" title="Басты бет" data-lang="home">Басты бет</a></li>
+                      <li><a href="about.html" title="Біз туралы" data-lang="about">Біз туралы</a></li>
+              <li><a href="teachers.html" title="Тәрбиешілер" data-lang="col">Ұжым</a></li>
+              <li><a href="page-gallery.html" title="Сабақтар" data-lang="gal">Галерея</a></li>
             </ul>
           </div>
         </div>
@@ -863,8 +884,8 @@
         <!-- Әлеуметтік желілер -->
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-item">
-            <div class="footer-title">Бізбен байланыста болыңыз</div>
-            <p>
+            <div class="footer-title"  data-lang="footer_social">Бізбен байланыста болыңыз</div>
+            <p data-lang="footer_social_text">
               Бізді әлеуметтік желілерде бақылаңыз және жаңалықтардан хабардар болыңыз.
             </p>
             <div class="sosmed-icon d-inline-flex">
@@ -881,6 +902,8 @@
 
   
 </div>
+
+
 	
 	<!-- JS VENDOR -->
 	<script src="js/vendor/jquery.min.js"></script>
@@ -893,7 +916,7 @@
 	<!-- SENDMAIL -->
 	<script src="js/vendor/validator.min.js"></script>
 	<script src="js/vendor/form-scripts.js"></script>
-
+<script src="js/lang.js"></script>
 	<script src="js/script.js"></script>
 
 </body>

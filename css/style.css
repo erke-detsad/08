@@ -3527,6 +3527,47 @@ Back To Top Section
   margin-bottom: 0;
   text-align: center; }
 
+
+.lang-buttons {
+  display: flex;
+margin-left: 370px;
+height: 40px;
+}
+
+.lang-buttons button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #ff9900;
+  border-color: #ff9900;
+}
+
+.lang-buttons button:hover {
+  background: var(--light-color);
+  border-color: var(--light-color);
+}
+
+@media (max-width: 768px) {
+  .desktop-lang {
+    display: none;
+  }
+
+  .mobile-lang {
+    display: flex;
+    justify-content: end;
+    
+    margin: 1px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-lang {
+    display: none;
+  }
+}
 /**
  * 7. - RESPONSIVE
  * -----------------------------------------------------------------------------
